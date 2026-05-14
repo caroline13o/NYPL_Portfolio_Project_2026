@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #f4c430; /* Saffon */
+}
+
+/* NAVIGATION BAR */
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #000000; /*  Dropdown Color  */
+}
+
+.topnav #myLinks {
+  display: none;
+  color: #0165ff; /* Bright Azure */
+  float: right;
+}
+
+.topnav a {
+  color: #ffffff;
+  padding: 0.875rem 1rem;
+  margin-top: 0.313rem;
+  margin-right: 0.938rem;
+  /* padding: 14px 16px; */
+  /* margin-top: 5px; */
+  /* margin-right: 15px; */
+  text-decoration: none;
+  display: block;
+  font-size: 1.25rem;
+}
+
+.topnav a.icon {
+  background: #000000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: solid #ffffff 0.063rem;
+}
+
+.topnav a:hover {
+  background-color: #007fff; /* Bright Azure */
+  color: #000000;
+}
+
+.logo {
+  background-color: #000000;
+  color: #007fff; /* Bright Azure */
+  font-size: 1.875rem;
+  padding: 1.25rem;
+  /* font-size: 30px; */
+  /* padding: 20px; */
+  border-bottom: solid #2e8b57 2px; /* Seagreen */
+}
+
+/* CONTAINER FOR IMAGE AND TEXT */
+.opening-page {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.875rem;
+  background-image: url("https://images.unsplash.com/photo-1770462988092-f8c614308a81?q=80&w=1550&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: 100% 100%;
+  margin-top: 3.125rem;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem 1rem;
+  border-radius: 0.188rem;
+  background-color: #000000cc;
+  color: #ffffff;
+  text-shadow: 0.063rem 0.063rem #000000;
+  font-size: calc(1.5rem + 0.3vw);
+  font-weight: bolder;
+}
+
+/* HORIZONTAL LINE */
+hr {
+  border: 0.063rem solid #007fff; /* Bright Azure */
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #070707;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1rem 5%;
+  word-spacing: 0.313rem;
+  /* padding: 16px 5%; */
+  /* word-spacing: 5px; */
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 18.75rem) {
+  .text {
+    /* font-size: 11px; */
+    font-size: 0.688rem;
+  }
+}

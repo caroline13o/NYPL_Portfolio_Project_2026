@@ -1,0 +1,156 @@
+/* PORTFOLIO CSS PAGE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #f4c430; /* Saffon */
+  margin: 0;
+  /* padding-top: 75px; */
+  padding-top: 4.688rem;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: overline underline;
+}
+
+h2,
+p {
+  margin-left: 0.625rem;
+}
+
+p {
+  text-align: justify;
+  font-weight: bold;
+  margin-right: 0.938rem;
+}
+
+/* NAVIGATION BAR */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: #007fff; /* Bright Azure */
+  font-size: 1.875rem;
+  padding: 1.25rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+}
+
+nav a:hover {
+  transition: border-bottom 0.4s ease-in;
+  color: #2e8b57; /* Seagreem */
+}
+
+/* CSS ARRAY */
+#caroline_portfolio {
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.portfolio-info {
+  background-color: #ebebeb;
+  /* padding: 10px; */
+  /* margin: 10px; */
+  padding: 0.625rem;
+  margin: 0.625rem;
+  /* height: 40vh; */
+  width: 30vw;
+  min-width: 25rem;
+  box-shadow: 0.188rem 0.188rem #a8a7a7;
+}
+
+.portfolio-info img {
+  /* width: 300px; */
+  /* height: 200px; */
+  width: 18.75rem;
+  height: 12.5rem;
+  object-fit: contain;
+}
+
+/* SECTION FOR IMAGE AND CONTACT (EMAIL ADDRESS) */
+.contact {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  /* font-size: 30px; */
+  font-size: 1.875rem;
+}
+
+.blue {
+  /* width: 350px; */
+  /* height: 250px; */
+  width: 21.875rem;
+  height: 15.625rem;
+  object-fit: contain;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* margin-right: 40px; */
+  /* padding: 5px; */
+  margin-right: 2.5rem;
+  padding: 0.313rem;
+  border: solid #2e8b57 0.25rem; /* Seagreen */
+  transform: translate(-50%, -50%);
+  border-radius: 0.188rem;
+  background-color: #000000cc;
+  color: #ffffff;
+  text-shadow: 0.063rem 0.063rem #000000;
+  font-size: calc(1.5rem + 0.3vw);
+  font-weight: bolder;
+}
+
+/* HORIZONTAL LINE */
+hr {
+  border: 0.063rem solid #007fff; /* Bright Azure */
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #070707;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1rem 5%;
+  word-spacing: 0.313rem;
+  /* padding: 16px 5%; */
+  /* word-spacing: 5px; */
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 18.75rem) {
+  .text {
+    /* font-size: 11px; */
+    font-size: 0.688rem;
+  }
+}
